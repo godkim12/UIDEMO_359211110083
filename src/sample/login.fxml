@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane layoutX="-2.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #ad1457;">
          <children>
@@ -47,7 +47,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="bbStatus" layoutX="380.0" layoutY="371.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #ec407a;" textFill="#e80606">
+      <Label fx:id="dbStatus" layoutX="380.0" layoutY="371.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #ec407a;" textFill="#e80606">
          <font>
             <Font size="14.0" />
          </font>
