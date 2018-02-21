@@ -1,4 +1,4 @@
-//package sample;
+package sample;
 
 import dbUtil.dbConnection;
 
@@ -11,7 +11,6 @@ public class loginModel {
     Connection connection;
 
     public loginModel() {
-
         try {
             this.connection = dbConnection.getConnection();
         } catch (SQLException ex){
@@ -31,7 +30,7 @@ public class loginModel {
         PreparedStatement pr = null;
         ResultSet rs = null;
         //sql
-        String sql = "select * user wher username = ? and password = ?";
+        String sql = "select * from user where username = ? and password = ?";
         try {
             pr = this.connection.prepareStatement(sql);
             pr.setString(1,user);

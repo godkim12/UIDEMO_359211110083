@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.adminController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Studen Data">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ad1457;">
+                     <children>
+                        <TableView fx:id="studentTable" layoutX="190.0" layoutY="55.0" prefHeight="271.0" prefWidth="491.0">
+                          <columns>
+                            <TableColumn fx:id="idcolum" prefWidth="34.0" text="ID" />
+                            <TableColumn fx:id="firstnamecolum" prefWidth="103.0" text="Firstname" />
+                              <TableColumn fx:id="lastnamecolum" prefWidth="93.0" text="Lastname" />
+                              <TableColumn fx:id="emailcolum" prefWidth="169.0" text="Email" />
+                              <TableColumn fx:id="dobcolum" prefWidth="91.0" text="Date of Birth" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="btnLoad" layoutX="548.0" layoutY="11.0" onAction="#loadStudentData" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #f4e842;" text="Load Date" textFill="#36a2a8">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField fx:id="searchTxt" layoutX="172.0" layoutY="18.0" promptText="Search" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Help?">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f4e842;" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

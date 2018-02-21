@@ -31,7 +31,12 @@
             </Label>
          </children>
       </Pane>
-      <JFXPasswordField fx:id="password" alignment="CENTER" focusColor="#1a40fffc" layoutX="380.0" layoutY="154.0" promptText="Password" unFocusColor="#01f261">
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="385.0" layoutY="105.0" promptText="username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER" focusColor="#1a40fffc" layoutX="384.0" layoutY="154.0" promptText="Password" unFocusColor="#01f261">
          <font>
             <Font size="14.0" />
          </font>
@@ -48,10 +53,5 @@
          </font>
       </Label>
       <Label fx:id="loginStatus" layoutX="346.0" layoutY="40.0" prefHeight="36.0" prefWidth="234.0" textFill="#f50a0a" />
-      <JFXTextField fx:id="username" layoutX="385.0" layoutY="105.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
    </children>
 </AnchorPane>
